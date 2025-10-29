@@ -137,7 +137,7 @@ public class GamePanel extends JPanel {
             }
             System.out.println("Loading next level: " + path);
             map = new TiledMap("/Asset/map/level2.json", "/Asset/Tileset/TilesetGrass.png");
-            p = new player(64, 64, map);
+            p = new player(64,400, map);
             cameraX = 0;
             cameraY = 0;
         } catch (Exception e) {
