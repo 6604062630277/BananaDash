@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="133">
+ <editorsettings>
+  <export target="level2_realfinal.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../Tileset/grass_tile.tsx"/>
+ <tileset firstgid="5" source="../Props/sign.tsx"/>
+ <tileset firstgid="6" source="../Props/spike.tsx"/>
+ <tileset firstgid="7" source="../Items/banana.tsx"/>
+ <tileset firstgid="8" source="../Enemy/Enemy/enemy.tsx"/>
+ <tileset firstgid="9" source="../Enemy/Enemy/big_enemy.tsx"/>
+ <tileset firstgid="10" source="../Props/flower.tsx"/>
+ <tileset firstgid="11" source="../Props/grass.tsx"/>
+ <tileset firstgid="12" source="../Props/rock.tsx"/>
+ <tileset firstgid="13" source="../Props/tree2.tsx"/>
+ <tileset firstgid="14" source="../Props/flower2.tsx"/>
+ <tileset firstgid="15" source="../Props/tree3.tsx"/>
+ <objectgroup id="3" name="tree">
+  <object id="1" gid="5" x="32" y="448" width="21.6667" height="19"/>
+  <object id="57" gid="2147483658" x="8" y="447.667" width="16" height="16"/>
+  <object id="58" gid="11" x="47.3333" y="462" width="32" height="32"/>
+  <object id="60" gid="11" x="112" y="462" width="32" height="32"/>
+  <object id="61" gid="12" x="152.333" y="492.333" width="32" height="32"/>
+  <object id="62" gid="13" x="94.3333" y="458" width="34.8333" height="69.6667"/>
+  <object id="63" gid="14" x="128" y="448" width="16" height="16"/>
+  <object id="64" gid="15" x="80.3333" y="457.333" width="32" height="64"/>
+  <object id="67" gid="15" x="299.542" y="491" width="39.9167" height="79.8333"/>
+  <object id="68" gid="10" x="293.25" y="480.5" width="16" height="16"/>
+  <object id="69" gid="14" x="442.417" y="513.333" width="16" height="16"/>
+  <object id="70" gid="13" x="399" y="521" width="33.5" height="67"/>
+  <object id="71" gid="15" x="412.667" y="520.667" width="32" height="64"/>
+  <object id="72" gid="12" x="316" y="493.25" width="32" height="32"/>
+  <object id="73" gid="11" x="381.5" y="526.25" width="32" height="32"/>
+  <object id="74" gid="11" x="528" y="493.75" width="32" height="32"/>
+  <object id="75" gid="11" x="591.75" y="493.75" width="32" height="32"/>
+  <object id="76" gid="12" x="618" y="491.25" width="28.75" height="28.75"/>
+  <object id="78" gid="2147483662" x="513" y="480.5" width="16" height="16"/>
+  <object id="79" gid="13" x="908" y="395.667" width="38.6667" height="81.3333"/>
+  <object id="80" gid="10" x="944" y="384.333" width="16" height="16"/>
+  <object id="81" gid="13" x="1100.67" y="522.333" width="37.3333" height="74.6667"/>
+  <object id="82" gid="13" x="1120" y="521.333" width="30.3333" height="60.6667"/>
+  <object id="83" gid="15" x="1086.33" y="521.667" width="32" height="64"/>
+  <object id="84" gid="14" x="1141.25" y="512.5" width="16" height="16"/>
+  <object id="86" gid="10" x="1015.5" y="512.5" width="16" height="16"/>
+  <object id="87" gid="11" x="1024.25" y="526" width="32" height="32"/>
+  <object id="88" gid="11" x="1231.5" y="525.5" width="32" height="32"/>
+  <object id="89" gid="12" x="1261" y="524.5" width="32" height="32"/>
+  <object id="90" gid="10" x="832" y="416" width="16" height="16"/>
+  <object id="92" gid="12" x="733.667" y="428.667" width="32" height="32"/>
+  <object id="96" gid="14" x="768" y="416" width="16" height="16"/>
+  <object id="97" gid="11" x="863.818" y="494.364" width="32" height="32"/>
+  <object id="98" gid="11" x="1295.25" y="494.25" width="32" height="32"/>
+  <object id="99" gid="11" x="1359.25" y="493.5" width="32" height="32"/>
+  <object id="101" gid="10" x="1390.33" y="480" width="16" height="16"/>
+  <object id="102" gid="12" x="12.6667" y="460.333" width="32" height="32"/>
+  <object id="103" gid="2147483662" x="1408" y="448" width="16" height="16"/>
+  <object id="104" gid="14" x="1440" y="448" width="16" height="16"/>
+  <object id="105" gid="2147483662" x="1472" y="448" width="16" height="16"/>
+  <object id="106" gid="14" x="1550.33" y="448" width="16" height="16"/>
+  <object id="107" gid="2147483658" x="1425" y="448.5" width="16" height="16"/>
+  <object id="108" gid="10" x="1461" y="448" width="16" height="16"/>
+  <object id="109" gid="2147483658" x="1538.08" y="448" width="16" height="16"/>
+  <object id="110" gid="14" x="1581.96" y="448" width="16" height="16"/>
+  <object id="111" gid="2147483658" x="1569.71" y="448" width="16" height="16"/>
+  <object id="115" gid="11" x="1550.33" y="461.5" width="32" height="32"/>
+  <object id="116" gid="11" x="1440" y="461.75" width="32" height="32"/>
+  <object id="117" gid="11" x="1408.25" y="461.75" width="32" height="32"/>
+  <object id="122" gid="13" x="1476.67" y="462" width="51.3333" height="100.667"/>
+  <object id="124" gid="12" x="1503.33" y="460" width="32" height="32"/>
+  <object id="126" gid="5" x="1519.67" y="448.25" width="21.6667" height="19"/>
+ </objectgroup>
+ <objectgroup id="6" name="final">
+  <properties>
+   <property name="name" value="goal"/>
+   <property name="next" value="end"/>
+   <property name="requiredBanana" type="int" value="8"/>
+   <property name="requiredEnemyCleared" type="bool" value="true"/>
+   <property name="transition" value="fade"/>
+  </properties>
+ </objectgroup>
+ <objectgroup id="2" name="spike">
+  <object id="2" gid="6" x="193.795" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="3" gid="6" x="206.704" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="4" gid="6" x="257.795" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="5" gid="6" x="270.704" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="6" gid="6" x="482.27" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="7" gid="6" x="495.179" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="8" gid="6" x="513.451" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="9" gid="6" x="526.361" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="10" gid="6" x="546.701" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="11" gid="6" x="559.611" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="12" gid="6" x="579.236" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="13" gid="6" x="592.145" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="14" gid="6" x="610.417" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="15" gid="6" x="623.326" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="16" gid="6" x="641.906" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="17" gid="6" x="654.826" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="18" gid="6" x="674.401" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="19" gid="6" x="687.321" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="20" gid="6" x="706.558" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="21" gid="6" x="719.467" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="22" gid="6" x="737.739" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="23" gid="6" x="750.649" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="24" gid="6" x="770.989" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="25" gid="6" x="783.899" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="26" gid="6" x="803.524" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="27" gid="6" x="816.433" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="28" gid="6" x="834.705" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="29" gid="6" x="847.614" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="30" gid="6" x="866.194" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="31" gid="6" x="879.114" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="32" gid="6" x="898.689" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="33" gid="6" x="911.609" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="34" gid="6" x="929.332" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="35" gid="6" x="942.252" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="36" gid="6" x="961.79" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="37" gid="6" x="974.71" y="548" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="47" gid="6" x="353.546" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+  <object id="48" gid="6" x="366.454" y="516" width="16" height="16">
+   <properties>
+    <property name="damage" type="int" value="10"/>
+    <property name="name" value="spike"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="enemy">
+  <object id="127" gid="8" x="422" y="514.364" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+  <object id="128" gid="8" x="567.333" y="481.667" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+  <object id="129" gid="8" x="791.667" y="417.667" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+  <object id="130" gid="8" x="1045.67" y="514" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+  <object id="131" gid="8" x="1177.67" y="514.167" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+  <object id="132" gid="8" x="1333" y="482" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="damage" type="int" value="5"/>
+    <property name="hp" type="int" value="5"/>
+    <property name="name" value="enemy"/>
+    <property name="patrolRange" type="int" value="5"/>
+    <property name="speed" type="float" value="1.5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="banana">
+  <object id="38" gid="7" x="232" y="480" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="39" gid="7" x="312" y="480" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="40" gid="7" x="919" y="383" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="41" gid="7" x="936" y="480" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="42" gid="7" x="680" y="448" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="43" gid="7" x="1208" y="512" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="44" gid="7" x="1353" y="480" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="45" gid="7" x="456" y="512" width="16" height="16">
+   <properties>
+    <property name="animated" type="bool" value="true"/>
+    <property name="name" value="banana"/>
+    <property name="score" type="int" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="1" name="ground" width="50" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,
+4,4,4,4,4,2,0,2,0,2,2,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,2,2,2,2,4,4,4,4,4,4,
+4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+</data>
+ </layer>
+</map>
