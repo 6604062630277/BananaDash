@@ -8,7 +8,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class BananaDash {
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("Banana Dash");
         GamePanel panel = new GamePanel();   

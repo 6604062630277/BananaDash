@@ -17,15 +17,19 @@ public class player {
     public int speed = 3;
     public double velY = 0;
     public int frame = 0, tick = 0;
-    public boolean jumping = false,moving,toRight = true,onGround = false;
-
+    public boolean jumping = false,moving = false,toRight = true,onGround = false;
+    private boolean isDead = false;
+    private int iFrame = 0;
+    
     //HP
     private final int maxHearts = 5;
-    private int hearts = maxHearts;
-    private boolean isDead = false;
-    private int iFrame = 0; 
-    public int getHearts() { return hearts; }
-    public int getMaxHearts() { return maxHearts; }
+    private int hearts = maxHearts;  
+    public int getHearts(){
+        return hearts;
+    }
+    public int getMaxHearts(){
+        return maxHearts;
+    }
 
     //Map
     private TiledMap map;
@@ -63,12 +67,11 @@ public class player {
         }
 
         if (jump && onGround) {
-            velY = -10;
+            velY = -8;
             jumping = true;
             onGround = false;
         }
         velY += 0.5;
-        if (velY > 8) velY = 8;
         y += velY;
 
         checkCollision();
@@ -121,7 +124,7 @@ public class player {
         if (tileX >= 0 && tileX < map.getMapWidthInTiles()
                 && tileY >= 0 && tileY < map.getMapHeightInTiles()
                 && map.isSpikeAt(tileY, tileX)){
-                takeDamage(1, true);
+                takeDamage(1);
         }
     }
 
@@ -141,6 +144,7 @@ public class player {
             }
         }
     }
+    //get banana
     public int getBananasCollected() {
         return bananasCollected;
     }
@@ -178,7 +182,7 @@ public class player {
     }
 
     //hp+damage
-    public void takeDamage(int dmg, boolean forceRespawn) {
+    public void takeDamage(int dmg) {
         if (iFrame > 0 || isDead) return;
         hearts -= dmg;
         if (hearts <= 0) {
@@ -188,11 +192,7 @@ public class player {
             iFrame = 60;
         }
     }
-
-    public void takeDamage(int dmg) {
-        takeDamage(dmg, false);
-    }
-
+    
     public void die() {
         System.out.println("Player died");
         isDead = true;
@@ -207,7 +207,7 @@ public class player {
     public void draw(Graphics g, int camX, int camY) {
         int drawX = x - camX;
         int drawY = y - camY+6;
-        if (iFrame > 0 && (iFrame / 4) % 2 == 0) return;
+        if (iFrame > 0 && (iFrame/4)%2 == 0) return;
         Image current = moving ? walk[frame % walk.length] : idle[frame % idle.length];
 
         if (toRight)

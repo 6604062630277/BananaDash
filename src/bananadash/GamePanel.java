@@ -59,7 +59,8 @@ public class GamePanel extends JPanel {
         }
         return null;
     }
-
+    
+    //constructor
     public GamePanel() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setFocusable(true);
@@ -259,13 +260,13 @@ public class GamePanel extends JPanel {
                     g.drawImage(img, x, 0, imgW, viewH, null);
                 }
                 return;
-            } else if (speed == backSpeed) {
-                y = viewH - imgH - 160;
-            } else if (speed == midSpeed) {
-                y = viewH - imgH - 100;
-            } else {
-                y = viewH - imgH - 60;
-            }
+                } else if (speed == backSpeed) {
+                    y = viewH - imgH - 290;
+                } else if (speed == midSpeed) {
+                    y = viewH - imgH - 230;
+                } else {
+                    y = viewH - imgH - 190;
+                }
 
             for (int x = offsetX; x < viewW; x += imgW) {
                 g.drawImage(img, x, y, null);

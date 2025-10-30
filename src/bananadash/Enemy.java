@@ -33,10 +33,6 @@ public class Enemy {
         deadImg = new ImageIcon(getClass().getResource("/Asset/Enemy/Enemy/EnemyDead3.png")).getImage();
     }
 
-    public Enemy(int x, int y, float range, float speed) {
-        this(x, y, range, speed, 64, 64);
-    }
-
     public void update() {
         if (!isAlive || isDead) return;
         if(movingRight){

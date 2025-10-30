@@ -8,6 +8,7 @@ import java.io.*;
 import java.util.*;
 
 public class TiledMap {
+    //for enemy prop goal
     public static class SpawnInfo {
         public final int x,y,w,h;
         public float range;
@@ -17,7 +18,7 @@ public class TiledMap {
             this.y = y;
             this.w = w;
             this.h = h;
-            this.range = range; 
+            this.range = range; //for enemy
         }
     }
     
@@ -35,6 +36,7 @@ public class TiledMap {
         return goal;
     }
     
+    //read string propoties
     private String getStringProp(JSONObject obj, String key) {
         JSONArray props = obj.optJSONArray("properties");
         if (props == null) return null;
@@ -48,6 +50,7 @@ public class TiledMap {
         return null;
     }
     
+    //read int propoties
     private int getIntProp(JSONObject obj, String key, int defVal) {
         JSONArray props = obj.optJSONArray("properties");
         if (props == null) return defVal;
@@ -116,6 +119,7 @@ public class TiledMap {
     //enemy
     private java.util.List<SpawnInfo> enemySpawns = new java.util.ArrayList<>();
     private java.util.List<Enemy> enemies = new java.util.ArrayList<>();
+    
     public java.util.List<Enemy> getEnemies(){
         return enemies;
     }
@@ -231,21 +235,26 @@ public class TiledMap {
                         float h = (float) obj.optDouble("height", tileSize);
 
                         float patrolRange = 10;
+                        float speed = 1.5f;
                         JSONArray props = obj.optJSONArray("properties");
                         if (props != null) {
                             for (int p = 0; p < props.length(); p++) {
                                 JSONObject prop = props.getJSONObject(p);
                                 if ("patrolRange".equals(prop.optString("name"))) {
                                     patrolRange = (float) prop.optDouble("value", patrolRange);
+                                    break;
                                 }
+                                else if ("speed".equals(prop.optString("name"))) {
+                                    speed = (float) prop.optDouble("value", speed);
+                                    break;
+                                }
+                                
                             }
                         }
 
                         boolean isTileObject = obj.has("gid");
                         int spawnX = Math.round(x);
                         int spawnY = Math.round(isTileObject ? y : (y + h));
-
-                        // ✅ เพิ่ม patrolRange เข้าไปใน SpawnInfo
                         enemySpawns.add(new SpawnInfo(spawnX, spawnY, Math.round(w), Math.round(h), patrolRange));
 
                         System.out.println("Enemy " + j + " → patrolRange=" + patrolRange);
@@ -347,7 +356,7 @@ public class TiledMap {
     public void buildEnemiesFromSpawns(java.util.List<SpawnInfo> spawns) {
         enemies.clear();
         for (SpawnInfo s : spawns) {
-            enemies.add(new Enemy(s.x, s.y, 64f, 1.2f));
+            enemies.add(new Enemy(s.x, s.y, s.range, 1.5f, s.w, s.h));
         }
     }
     public void spawnEnemies() {
